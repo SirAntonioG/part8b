@@ -13,9 +13,7 @@ const ALL_PERSONS = gql`
 `;
 
 const App = () => {
-  const result = useQuery(ALL_PERSONS, {
-    pollInterval: 2000,
-  });
+  const result = useQuery(ALL_PERSONS);
 
   if (result.loading) {
     return <div>loading...</div>;
